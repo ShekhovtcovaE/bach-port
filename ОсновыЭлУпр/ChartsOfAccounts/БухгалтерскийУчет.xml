@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<ChartOfAccounts uuid="da3217dc-1cf9-47af-86e0-b9925e941029">
+		<InternalInfo>
+			<xr:GeneratedType name="ChartOfAccountsObject.БухгалтерскийУчет" category="Object">
+				<xr:TypeId>0b59e74c-46d6-435c-909b-f1ed64d2d8db</xr:TypeId>
+				<xr:ValueId>56ba28ef-5c0d-4e0d-90bc-ec9a4d6e40d2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfAccountsRef.БухгалтерскийУчет" category="Ref">
+				<xr:TypeId>9a32a8a6-e6c9-4feb-af1a-1299b0bebebf</xr:TypeId>
+				<xr:ValueId>a3fc9a1b-256f-4a85-a909-62a94a25656b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfAccountsSelection.БухгалтерскийУчет" category="Selection">
+				<xr:TypeId>c08edbbd-45ba-4134-a029-c93bf41302cc</xr:TypeId>
+				<xr:ValueId>226b96f7-7a66-4374-a773-2c996442e943</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfAccountsList.БухгалтерскийУчет" category="List">
+				<xr:TypeId>c190a2c4-e315-4c95-b88c-c4f9cdaf147b</xr:TypeId>
+				<xr:ValueId>b31af112-b8cc-4190-a844-b89ae0e50753</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfAccountsManager.БухгалтерскийУчет" category="Manager">
+				<xr:TypeId>8f2941c5-104e-4374-802a-088207758c80</xr:TypeId>
+				<xr:ValueId>2858d4f9-fec6-48ab-b10a-2d8b9075a7d2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfAccountsExtDimensionTypes.БухгалтерскийУчет" category="ExtDimensionTypes">
+				<xr:TypeId>17b9bc67-0c54-4650-b634-a49955cb3762</xr:TypeId>
+				<xr:ValueId>74d90734-875e-4f2f-a601-91f114075031</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfAccountsExtDimensionTypesRow.БухгалтерскийУчет" category="ExtDimensionTypesRow">
+				<xr:TypeId>03eb1992-24d9-44a5-9467-71edb7f5a628</xr:TypeId>
+				<xr:ValueId>2948daa9-8ae6-4ad6-a3e2-2c14eb19bffb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>БухгалтерскийУчет</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бухгалтерский учет</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<BasedOn/>
+			<ExtDimensionTypes/>
+			<MaxExtDimensionCount>0</MaxExtDimensionCount>
+			<CodeMask/>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>25</DescriptionLength>
+			<CodeSeries>WholeChartOfAccounts</CodeSeries>
+			<CheckUnique>true</CheckUnique>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<Characteristics/>
+			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
+			<EditType>InDialog</EditType>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<InputByString>
+				<xr:Field>ChartOfAccounts.БухгалтерскийУчет.StandardAttribute.Description</xr:Field>
+				<xr:Field>ChartOfAccounts.БухгалтерскийУчет.StandardAttribute.Code</xr:Field>
+			</InputByString>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<CreateOnInput>DontUse</CreateOnInput>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<DefaultObjectForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<AutoOrderByCode>false</AutoOrderByCode>
+			<OrderLength>0</OrderLength>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<DataHistory>DontUse</DataHistory>
+			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
+			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects/>
+	</ChartOfAccounts>
+</MetaDataObject>
