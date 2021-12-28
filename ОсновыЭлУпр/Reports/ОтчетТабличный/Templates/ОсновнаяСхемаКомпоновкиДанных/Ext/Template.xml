@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВладелецСсылка</dataPath>
+			<field>ВладелецСсылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПоПроекту</dataPath>
+			<field>СуммаПоПроекту</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Проекты.Владелец.Ссылка КАК ВладелецСсылка,
+	Проекты.Наименование КАК Проект,
+	Проекты.СуммаПоПроекту КАК СуммаПоПроекту
+ИЗ
+	Справочник.Проекты КАК Проекты</query>
+	</dataSet>
+	<totalField>
+		<dataPath>СуммаПоПроекту</dataPath>
+		<expression>Сумма(СуммаПоПроекту)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:selection>
+					<dcsset:userSettingID>cf68afd1-0c7d-40bb-8055-1a7d88c0e4b3</dcsset:userSettingID>
+				</dcsset:selection>
+				<dcsset:columnsUserSettingID>7afae287-c112-4de4-a8fe-e76920661372</dcsset:columnsUserSettingID>
+				<dcsset:rowsUserSettingID>be669bad-4b53-4163-ab2d-c67f70a95672</dcsset:rowsUserSettingID>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
